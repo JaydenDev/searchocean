@@ -9,41 +9,24 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
-<body class="p-2">
+<body class="p-2 bg-indigo-500">
   <div id="center-container" class="grid text-center justify-center">
     <div id="header">
       <h1 class="text-2xl font-semibold">Search Ocean</h1>
     </div>
-    <!-- <div id="pop">
-          <article>
-              <a href="https://github.com/JaydenDev/Catalyst">
-                  <button class="text-black" class="fas fa-times white-btn" onClick="hideAdvert()"></button>
-                  <h1 class="text-black"> Get the fast, feature packed Electron browser </h1>
-                  <p class="text-black"> Try out Catalyst!</p>
-              </a>
-          </article>
-      </div> -->
+
     <div class="flex w-full flex-wrap items-stretch mb-3 justify-center space-x-2">
       <input
         class="px-3 py-3 placeholder-white text-white relative bg-red-500 rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-50"
         id="searchbar" list="data" placeholder="Start searching..."><button
         class="px-3 py-3 w-50 bg-red-500 text-white rounded" onClick="search()" id="searchbar-gobutton">Go</button>
-      <datalist id="data">
-        <option value="Google"></option>
-        <option value="Scratch"></option>
-        <option value="Youtube"></option>
-        <option value="Steam"></option>
-        <option value="Catalyst"></option>
-        <option value="Ninetails"></option>
-        <option value="How to learn HTML"></option>
-      </datalist>
     </div>
     <br>
     <br>
     <div class="flex w-full flex-wrap space-x-2 items-stretch mb-3 justify-center">
       <input id="enginebar"
         class="px-3 py-3 placeholder-white text-white relative bg-red-500 rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-50"
-        placeholder="https://google.com/search?q="><button class="px-3 py-3 w-50 bg-red-500 text-white rounded"
+        placeholder="https://google.com/search?q="><button class="px-3 py-3 w-50 bg-red-500 text-white rounded" style="animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;"
         onClick="engineSel()">Select</button>
     </div>
     <br>
@@ -53,28 +36,9 @@
       <button class="px-3 py-3 w-50 bg-red-500 text-white rounded" onClick="bing()" id="bing">BING</button>
       <button class="px-3 py-3 w-50 bg-red-500 text-white rounded" onClick="qwant()" id="qwant">QWANT</button>
     </div>
-    <div class="card-left min-w-12 bg-red-500 p-2 text-white rounded shadow">
-        <a href="https://google.com">
-          <h1 class="">Google</h1>
-          <p class="">Search Engine</p>
-    </div>
-    <!-- <div class="card-right">
-          <article>
-              <a href="https://google.com">
-              <h1 class="text-black"> Google </h1>
-              <p class="text-black"> Search Engine</p>
-          </article>
-      </div> -->
-    </div>
-    <div id="footer-left">
-      <a href="https://github.com/JaydenDev/SearchOcean">
-        JaydenDev @ 2021, MIT License, SearchOcean v1.0.0-beta
-      </a>
-    </div>
-    <!-- <div id="footer-right">
-              <p> This is Pre-Release software </p>
-          </div>
-      -->
-  
+
+  </div>
+
 </body>
+
 </html>
