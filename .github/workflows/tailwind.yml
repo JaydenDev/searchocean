@@ -1,0 +1,29 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Check for prettier
+
+# Controls when the workflow will run
+on: [push, pull_request]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.24.x
+          run_install: true
+
+      - name: Format prettier
+        run: pnpm run tailwind:build
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: "Build with PostCSS"
