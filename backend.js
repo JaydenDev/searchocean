@@ -6,7 +6,7 @@ function engineSel() {
 
 function search() {
     var searchterm = document.getElementById("searchbar").value;
-    window.location.replace(engine + searchterm);
+    window.location.href = engine + searchterm;
 }
 
 function hideAdvert() {
